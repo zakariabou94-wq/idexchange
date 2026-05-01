@@ -1,0 +1,14 @@
+Place your images in this folder.
+
+Portrait photo:
+  Save as: isa-portrait.jpg
+  Then in index.html, find the about section and replace:
+    <div class="about-image-placeholder">Portretfoto</div>
+  With:
+    <img src="images/isa-portrait.jpg" alt="Isa Dijkstra" />
+
+Logo (optional):
+  Save as: logo.png or logo.svg
+
+Other assets (optional):
+  Any photos or graphics used on the site go here.

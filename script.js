@@ -119,11 +119,24 @@ document.querySelectorAll('.lang-toggle').forEach(btn => {
   btn.addEventListener('click', switchLang);
 });
 
-// ── Sticky header ────────────────────────────────────────────────
-const header = document.getElementById('site-header');
-window.addEventListener('scroll', () => {
+// ── Sticky header + active nav ───────────────────────────────────
+const header   = document.getElementById('site-header');
+const sections = document.querySelectorAll('main section[id]');
+const navLinks = document.querySelectorAll('.site-nav a[href^="#"]');
+
+function onScroll() {
   header.classList.toggle('scrolled', window.scrollY > 50);
-});
+
+  // Active nav link: find the last section whose top is above the fold midpoint
+  const midpoint = window.scrollY + 140;
+  let active = '';
+  sections.forEach(sec => { if (sec.offsetTop <= midpoint) active = sec.id; });
+  navLinks.forEach(link => {
+    link.classList.toggle('active', link.getAttribute('href') === `#${active}`);
+  });
+}
+
+window.addEventListener('scroll', onScroll, { passive: true });
 
 // ── Mobile nav ───────────────────────────────────────────────────
 const hamburger = document.getElementById('hamburger');

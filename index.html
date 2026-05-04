@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IDexchange — Isa Dijkstra</title>
+  <meta name="description" content="IDexchange — Sales structuur, conversie en sales leadership door Isa Dijkstra." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Favicon — replace href with your actual icon files when ready -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="icon" type="image/png"     href="images/favicon.png" sizes="32x32" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       HEADER
+       ══════════════════════════════════════════ -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <a href="#hero" class="logo">
+        <!-- LOGO IMAGE: replace src with your logo file, e.g. src="images/logo.svg" -->
+        <img src="images/logo.svg" alt="" class="logo-img" onerror="this.style.display='none'" aria-hidden="true" />
+        IDexchange
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="site-nav" id="site-nav">
+        <a href="#over"       data-i18n="nav.about">Over mij</a>
+        <a href="#expertise"  data-i18n="nav.expertise">Expertise</a>
+        <a href="#resultaten" data-i18n="nav.results">Resultaten</a>
+        <a href="#contact"    data-i18n="nav.contact">Contact</a>
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">EN</button>
+      </nav>
+
+      <!-- Hamburger (mobile only) -->
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════
+       MOBILE NAV OVERLAY
+       ══════════════════════════════════════════ -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <nav>
+      <a href="#over"       data-i18n="nav.about"     class="mobile-link">Over mij</a>
+      <a href="#expertise"  data-i18n="nav.expertise"  class="mobile-link">Expertise</a>
+      <a href="#resultaten" data-i18n="nav.results"    class="mobile-link">Resultaten</a>
+      <a href="#contact"    data-i18n="nav.contact"    class="mobile-link">Contact</a>
+      <button class="lang-toggle lang-toggle-mobile" id="lang-toggle-mobile" aria-label="Switch language">EN</button>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════
+         HERO
+         ══════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <h1 class="fade-up" data-i18n="hero.headline">
+            Je hebt leads. Wat ontbreekt is <em>structuur.</em>
+          </h1>
+          <p class="fade-up delay-1" data-i18n="hero.sub">
+            Veel gesprekken zonder systeem leiden zelden tot consistente omzet. Ik bouw en leid de salesprocessen die dat oplossen.
+          </p>
+          <div class="hero-cta fade-up delay-2">
+            <a href="#contact" class="btn btn-primary" data-i18n="hero.cta1">Neem contact op</a>
+
+            <!--
+              WhatsApp button
+              Replace YOURPHONENUMBER with your number including country code,
+              no spaces or + sign. Example for Netherlands: 31612345678
+            -->
+            <a href="https://wa.me/YOURPHONENUMBER"
+               class="btn btn-outline-light"
+               target="_blank"
+               rel="noopener noreferrer"
+               data-i18n="hero.cta_wa">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         OVER MIJ / ABOUT
+         ══════════════════════════════════════════ -->
+    <section class="about" id="over">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-wrap" data-reveal>
+            <!--
+              Portrait photo
+              Option A (recommended): replace the placeholder div with an img tag:
+                <img src="images/isa-portrait.jpg" data-i18n-alt="about.img_alt" alt="Portretfoto Isa Dijkstra" />
+              Option B: keep the placeholder until you have the photo ready
+            -->
+            <div class="about-image-placeholder">Portretfoto</div>
+          </div>
+
+          <div class="about-text">
+            <span class="label-tag"     data-reveal data-i18n="about.label">Over mij</span>
+            <h2 class="section-title"   data-reveal data-reveal-delay="1" data-i18n="about.title">
+              Druk zijn is geen sales. <em>Structuur wel.</em>
+            </h2>
+            <p class="body-text"        data-reveal data-reveal-delay="2" data-i18n="about.p1">
+              Ik werk in high-volume sales omgevingen — 400+ gesprekken per dag. Ik weet wat een team dagelijks tegenkomt en waar omzet werkelijk wordt gewonnen of verloren.
+            </p>
+            <p class="body-text"        data-reveal data-reveal-delay="2" data-i18n="about.p2">
+              Ik breng overzicht, stuur gesprekken en bouw systemen die zorgen dat leads geen toeval meer zijn. Geen druk werk, maar effectief werk.
+            </p>
+            <p class="body-text"        data-reveal data-reveal-delay="2" data-i18n="about.p3">
+              Echte conversie komt niet uit standaard scripts. Ik kijk naar gedrag in gesprekken — sturing, timing en wat er onder de woorden zit.
+            </p>
+            <p class="body-text-sm"     data-reveal data-reveal-delay="3" data-i18n="about.small">
+              Inzetbaar binnen uiteenlopende branches — waaronder high-ticket coaching, online fitness, zelfontwikkeling, producten voor vrouwen en trading.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         EXPERTISE
+         ══════════════════════════════════════════ -->
+    <section class="expertise" id="expertise">
+      <div class="container">
+        <div class="expertise-header">
+          <span class="label-tag"   data-reveal data-i18n="expertise.label">Wat ik doe</span>
+          <h2 class="section-title" data-reveal data-reveal-delay="1" data-i18n="expertise.title">Drie pijlers, één resultaat.</h2>
+          <p class="section-sub"    data-reveal data-reveal-delay="2" data-i18n="expertise.sub">Meer gesprekken betekent niet meer omzet. Het verschil zit in het proces.</p>
+        </div>
+        <!-- Cards rendered by script.js from content.js -->
+        <div class="expertise-grid" id="expertise-cards"></div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         STATS / RESULTATEN
+         ══════════════════════════════════════════ -->
+    <section class="stats-section" id="resultaten">
+      <div class="container">
+        <!-- Stats rendered by script.js from content.js -->
+        <div class="stats-grid" id="stats-grid"></div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         ERVARING / EXPERIENCE
+         ══════════════════════════════════════════ -->
+    <section class="experience" id="ervaring">
+      <div class="container">
+        <div class="experience-inner">
+          <h2 class="experience-title" data-reveal data-i18n="experience.title">Wat ik meebreng.</h2>
+          <!-- Timeline rendered by script.js from content.js -->
+          <div id="experience-timeline"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         STATEMENT
+         ══════════════════════════════════════════ -->
+    <section class="statement">
+      <div class="container">
+        <div class="statement-quote" data-reveal>
+          <h2 data-i18n="statement.headline">
+            De meeste salesproblemen zitten niet in de lead.<br />
+            <em>Maar in hoe het proces is ingericht.</em>
+          </h2>
+        </div>
+        <div class="statement-grid">
+          <div class="statement-col bad" data-reveal>
+            <h3 data-i18n="statement.bad_title">Waar het vaak misgaat</h3>
+            <!-- List items rendered by script.js from content.js -->
+            <ul id="statement-bad"></ul>
+          </div>
+          <div class="statement-col good" data-reveal data-reveal-delay="1">
+            <h3 data-i18n="statement.good_title">Wat wel werkt</h3>
+            <!-- List items rendered by script.js from content.js -->
+            <ul id="statement-good"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         REVIEWS / TESTIMONIALS
+         Only manually approved reviews appear here.
+         Edit the items array in content.js to add or
+         remove testimonials.
+         ══════════════════════════════════════════ -->
+    <section class="reviews">
+      <div class="container">
+        <div class="reviews-header">
+          <h2 class="section-title" data-reveal data-i18n="reviews.title">Woorden van anderen</h2>
+        </div>
+        <!-- Review cards rendered by script.js from content.js -->
+        <div class="reviews-grid" id="review-cards"></div>
+        <div class="reviews-cta">
+          <!--
+            Google Reviews link
+            Replace the href with your own Google review link.
+            You can find it in Google Business Profile → Get more reviews.
+          -->
+          <a href="https://g.page/r/YOUR_GOOGLE_REVIEW_LINK/review"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="btn btn-outline"
+             data-i18n="reviews.cta">Laat een review achter</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         CONTACT
+         Uses Formspree — messages go straight to email.
+         Steps:
+           1. Go to https://formspree.io and create a free account
+           2. Create a new form and copy your Form ID
+           3. Replace YOUR_FORM_ID in the action URL below
+         ══════════════════════════════════════════ -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-inner">
+          <div class="contact-header">
+            <h2 data-reveal data-i18n="contact.title">Laten we praten.</h2>
+            <p  data-reveal data-reveal-delay="1" data-i18n="contact.sub">Vertel kort over je salesproces. Ik reageer binnen 48 uur.</p>
+          </div>
+
+          <form id="contact-form" action="https://formspree.io/f/mojrqgba" method="POST" novalidate>
+            <div class="form-row">
+              <div class="form-group" data-reveal>
+                <label for="name" data-i18n="contact.lbl_name">Naam</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  required
+                  autocomplete="name"
+                  data-i18n-ph="contact.ph_name"
+                  placeholder="Jouw naam"
+                />
+              </div>
+              <div class="form-group" data-reveal data-reveal-delay="1">
+                <label for="email" data-i18n="contact.lbl_email">E-mailadres</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  autocomplete="email"
+                  data-i18n-ph="contact.ph_email"
+                  placeholder="jouw@email.nl"
+                />
+              </div>
+            </div>
+
+            <div class="form-group" data-reveal>
+              <label for="company" data-i18n="contact.lbl_company">Bedrijf</label>
+              <input
+                id="company"
+                name="company"
+                type="text"
+                autocomplete="organization"
+                data-i18n-ph="contact.ph_company"
+                placeholder="Bedrijfsnaam"
+              />
+            </div>
+
+            <div class="form-group" data-reveal data-reveal-delay="1">
+              <label for="message" data-i18n="contact.lbl_message">Bericht</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                data-i18n-ph="contact.ph_message"
+                placeholder="Vertel me over je huidige salesproces..."
+              ></textarea>
+            </div>
+
+            <div class="form-submit" data-reveal>
+              <button type="submit" class="btn btn-dark" id="form-submit-btn" data-i18n="contact.submit">
+                Verstuur bericht
+              </button>
+            </div>
+
+            <div class="form-message" id="form-message" role="status" aria-live="polite"></div>
+            <input type="text" name="_gotcha" style="display:none" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+       ══════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <!-- LOGO IMAGE (light version): replace src when ready -->
+          <img src="images/logo.svg" alt="" class="logo-img logo-img--light" onerror="this.style.display='none'" aria-hidden="true" />
+          IDexchange
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#over"       data-i18n="footer.nav.about">Over mij</a>
+          <a href="#expertise"  data-i18n="footer.nav.expertise">Expertise</a>
+          <a href="#resultaten" data-i18n="footer.nav.results">Resultaten</a>
+          <a href="#contact"    data-i18n="footer.nav.contact">Contact</a>
+        </nav>
+        <div class="footer-copy" data-i18n="footer.copy">&copy; 2026 IDexchange — Isa Dijkstra</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════
+       FLOATING WHATSAPP BUTTON
+       Replace YOURPHONENUMBER with your number
+       (country code, no + sign, e.g. 31612345678)
+       ══════════════════════════════════════════ -->
+  <a href="https://wa.me/YOURPHONENUMBER"
+     class="wa-float"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Contact via WhatsApp">
+    <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="wa-float-label">WhatsApp</span>
+  </a>
+
+  <!-- content.js must load before script.js -->
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
